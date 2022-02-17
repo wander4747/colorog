@@ -1,6 +1,6 @@
 # Colorog
 
-[![test](https://github.com/wander4747/colorog/actions/workflows/test.yaml/badge.svg)](https://github.com/wander4747/colorog/actions/workflows/test.yaml)
+[![Test](https://github.com/wander4747/colorog/actions/workflows/test.yaml/badge.svg)](https://github.com/wander4747/colorog/actions/workflows/test.yaml)
 [![Lint](https://github.com/wander4747/colorog/actions/workflows/lint.yaml/badge.svg)](https://github.com/wander4747/colorog/actions/workflows/lint.yaml)
 
 Simple package for coloring text in terminals
@@ -29,5 +29,4 @@ func main() {
 	l.WithColor(color.Green, "with color")
 	l.Fatal("fatal")
 }
-
 ```

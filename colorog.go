@@ -1,6 +1,7 @@
 package colorog
 
 import (
+	"fmt"
 	"log"
 
 	"github.com/wander4747/colorog/color"
@@ -39,6 +40,16 @@ func (c Colorog) Fatal(text string) {
 
 func (c Colorog) WithColor(color, text string) {
 	c.print(color, text)
+}
+
+func (c Colorog) Unicorn(text string) {
+
+	unicornText := ""
+
+	for _, char := range text {
+		unicornText = unicornText + c.colorize(color.UnicornColors[0], string(char))
+	}
+	fmt.Println(unicornText)
 }
 
 func (c Colorog) colorize(cl, text string) string {

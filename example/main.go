@@ -12,5 +12,6 @@ func main() {
 	l.Warning("warning")
 	l.Light("light")
 	l.WithColor(color.Green, "with color")
+	l.Unicorn("Bom dia do unicórnio Golang")
 	l.Fatal("fatal")
 }

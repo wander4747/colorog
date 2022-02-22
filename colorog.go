@@ -34,7 +34,7 @@ func (c Colorog) Light(text string) {
 }
 
 func (c Colorog) Fatal(text string) {
-	log.Fatal(color.Red + text + color.Reset)
+	log.Fatal(color.BIRed + text + color.Reset)
 }
 
 func (c Colorog) WithColor(color, text string) {

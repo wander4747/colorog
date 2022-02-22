@@ -7,6 +7,7 @@ import (
 
 func main() {
 	l := colorog.New()
+	l.Unicorn("unicorn unicorn")
 	l.Success("success")
 	l.Info("info")
 	l.Warning("warning")

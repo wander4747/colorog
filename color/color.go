@@ -1,7 +1,9 @@
 package color
 
 var (
-	Reset  = "\033[0m"
+	Reset = "\033[0m"
+
+	// Basic colors
 	Green  = "\033[0;32m"
 	Blue   = "\033[0;34m"
 	Yellow = "\033[1;33m"

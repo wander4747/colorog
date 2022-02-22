@@ -1,7 +1,6 @@
 package colorog
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/wander4747/colorog/color"
@@ -46,10 +45,12 @@ func (c Colorog) Unicorn(text string) {
 
 	unicornText := ""
 
-	for _, char := range text {
-		unicornText = unicornText + c.colorize(color.UnicornColors[0], string(char))
+	for i, char := range text {
+		currentColor := i % len(color.UnicornColors)
+		unicornText = unicornText + c.colorize(color.UnicornColors[currentColor], string(char))
 	}
-	fmt.Println(unicornText)
+
+	log.Print(unicornText)
 }
 
 func (c Colorog) colorize(cl, text string) string {

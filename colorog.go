@@ -44,9 +44,10 @@ func (c Colorog) WithColor(color, text string) {
 func (c Colorog) Unicorn(text string) {
 
 	unicornText := ""
+	colorCount := len(color.UnicornColors)
 
 	for i, char := range text {
-		currentColor := i % len(color.UnicornColors)
+		currentColor := i % colorCount
 		unicornText = unicornText + c.colorize(color.UnicornColors[currentColor], string(char))
 	}
 

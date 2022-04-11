@@ -7,12 +7,11 @@ import (
 
 func main() {
 	l := colorog.New()
-	l.Unicorn("unicorn unicorn")
 	l.Success("success")
 	l.Info("info")
 	l.Warning("warning")
 	l.Light("light")
 	l.WithColor(color.Green, "with color")
-	l.Unicorn("Bom final de semana e até amanhã!")
+	l.Unicorn("Mensagem do unicórnio: bom final de semana e até amanhã!")
 	l.Fatal("fatal")
 }

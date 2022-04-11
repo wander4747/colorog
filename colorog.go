@@ -42,6 +42,18 @@ func (c Colorog) WithColor(color, text string) {
 	c.print(color, text)
 }
 
+func (c Colorog) Unicorn(text string) {
+
+	unicornText := ""
+
+	for i, char := range text {
+		currentColor := i % len(color.UnicornColors)
+		unicornText = unicornText + c.colorize(color.UnicornColors[currentColor], string(char))
+	}
+
+	log.Print(unicornText)
+}
+
 func (c Colorog) colorize(cl, text string) string {
 	return cl + text + color.Reset
 }

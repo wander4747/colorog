@@ -13,5 +13,6 @@ func main() {
 	l.Warning("warning")
 	l.Light("light")
 	l.WithColor(color.Green, "with color")
+	l.Unicorn("Bom final de semana e até amanhã!")
 	l.Fatal("fatal")
 }

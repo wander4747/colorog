@@ -9,6 +9,8 @@ var (
 	Yellow = "\033[1;33m"
 	Red    = "\033[0;31m"
 	White  = "\033[0;97m"
+	Purple = "\033[0;35m"
+	Cyan   = "\033[0;36m"
 
 	// High Intensity
 	IBlack  = "\033[0;90m" // Black

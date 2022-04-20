@@ -24,13 +24,13 @@ func TestColorog_All(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			c := New()
-			c.Success(tt.args.text)
-			c.Info(tt.args.text)
-			c.Warning(tt.args.text)
-			c.Light(tt.args.text)
-			c.Danger(tt.args.text)
-			c.WithColor(color.Green, tt.args.text)
+			Success(tt.args.text)
+			Info(tt.args.text)
+			Warning(tt.args.text)
+			Light(tt.args.text)
+			Danger(tt.args.text)
+			WithColor(color.Green, tt.args.text)
+			Unicorn(tt.args.text)
 		})
 	}
 }

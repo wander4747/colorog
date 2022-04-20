@@ -1,10 +1,10 @@
 package color
 
 var UnicornColors = []string{
-	BIRed,
-	BIGreen,
-	BIYellow,
-	BIBlue,
-	BIPurple,
+	Red,
+	Green,
+	Yellow,
+	Blue,
+	Purple,
 	BICyan,
 }

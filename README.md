@@ -21,12 +21,12 @@ import (
 )
 
 func main() {
-	l := colorog.New()
-	l.Success("success")
-	l.Info("info")
-	l.Warning("warning")
-	l.Light("light")
-	l.WithColor(color.Green, "with color")
-	l.Fatal("fatal")
+	colorog.Success("success")
+	colorog.Info("info")
+	colorog.Warning("warning")
+	colorog.Light("light")
+	colorog.WithColor(color.Green, "with color")
+	colorog.Unicorn("Bom final de semana e até amanhã!")
+	colorog.Fatal("fatal")
 }
 ```
